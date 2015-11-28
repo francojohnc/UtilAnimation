@@ -1,9 +1,10 @@
 this is the class i'm using on my other application need animation,
 this is java class only
-no xml required,
-easy to use,
-less code,
-reusable
+* no xml required,
+* easy to use,
+* less code,
+* reusable
+
 [demo](https://youtu.be/q-sNtln96rI)
 
 #####how to use?
@@ -14,9 +15,9 @@ just download this [class](https://raw.githubusercontent.com/francojohnc/UtilAni
 ```
   UtilAnim.rotate(v, 360, 1000, null);
 ```
-   v - is your object you want to animate
-   360 - degrees
-   null - is the animation listener
+   * v - is your object you want to animate
+   * 360 - degrees
+   * null - is the animation listener
 
 Fragment Animation
 ```
