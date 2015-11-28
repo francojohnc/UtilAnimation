@@ -7,6 +7,31 @@ this is java class only
 
 [demo](https://youtu.be/q-sNtln96rI)
 
+* fade in
+* fade out
+* bounce x
+* bounce y
+* move x
+* move y
+* rotate
+* rotate x
+* roate y
+* zoom in
+* zoom out
+
+
+```
+UtilAnim.fideIn(View v,long durationMillis,Animator.AnimatorListener listener);
+UtilAnim.fideOut(View v,long durationMillis,Animator.AnimatorListener listener);
+UtilAnim.rotateY(View v,float toDegrees,long durationMillis,Animator.AnimatorListener listener) ;
+UtilAnim.rotateX(View v,float toDegrees,long durationMillis,Animator.AnimatorListener listener);
+UtilAnim.rotate(View v,float toDegrees,long durationMillis,Animator.AnimatorListener listener);
+UtilAnim.scaleWidth(View v,float fromWidth,float toWidth,long durationMillis,Animator.AnimatorListener listener);
+UtilAnim.scaleHeight(View v,float fromWidth,float toWidth,long durationMillis,Animator.AnimatorListener listener);
+UtilAnim.moveY(View v,float fromY,float toY,long durationMillis,Animator.AnimatorListener listener);
+UtilAnim.moveX(View v,float fromX,float toX,long durationMillis,Animator.AnimatorListener listener);
+```
+
 #####how to use?
 
 just download this [class](https://raw.githubusercontent.com/francojohnc/UtilAnimation/master/app/src/main/java/apkmarvel/com/utilanimation/util/UtilAnim.java) and copy to your application
