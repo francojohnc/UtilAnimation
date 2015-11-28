@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UtilAnimation</string>
+    <string name="action_settings">Settings</string>
+    <string name="fragment_animation">Fragment Animation</string>
+    <string name="fade_in">Fade In</string>
+    <string name="fade_out">Fade Out</string>
+    <string name="bounce_x">BounceX</string>
+</resources>
