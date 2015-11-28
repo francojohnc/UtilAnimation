@@ -12,7 +12,11 @@ import android.view.View;
 import android.view.animation.BounceInterpolator;
 
 public class UtilAnim {
-	//ObjectAnimator
+	/**
+	 * @param v - your view
+	 * @param durationMillis - milliseconds
+	 * @param listener - listener if animation done
+	 */
 	public static ObjectAnimator fideIn(View v,long durationMillis,Animator.AnimatorListener listener) {
 		return ofFloat(v, "alpha",0.0F, 1.0F, durationMillis,listener);
 	}

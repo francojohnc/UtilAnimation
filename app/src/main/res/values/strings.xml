@@ -4,5 +4,19 @@
     <string name="fragment_animation">Fragment Animation</string>
     <string name="fade_in">Fade In</string>
     <string name="fade_out">Fade Out</string>
-    <string name="bounce_x">BounceX</string>
+    <string name="bounce_x">Bounce X</string>
+    <string name="bounce_y">BOUNCE Y</string>
+    <string name="start">START</string>
+    <string name="programmers_developers">PROGRAMMERS,DEVELOPERS</string>
+    <string name="rotate">ROTATE</string>
+    <string name="rotate_x">ROTATE X</string>
+    <string name="rotate_y">ROTATE Y</string>
+    <string name="zoom_in">ZOOM IN</string>
+    <string name="zoom_out">ZOOM OUT</string>
+    <string name="move_x">MOVE X</string>
+    <string name="move_y">MOVE Y</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login_form">SAMPLE LOGIN FORM</string>
 </resources>

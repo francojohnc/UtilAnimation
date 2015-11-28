@@ -16,6 +16,14 @@ public class MenuFragment extends Fragment {
     private Button fadeIn;
     private Button fadeOut;
     private Button bounceX;
+    private Button bounceY;
+    private Button moveX;
+    private Button moveY;
+    private Button rotate;
+    private Button rotateX;
+    private Button rotateY;
+    private Button zoomIN;
+    private Button zoomOut;
 
     @Override
     public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstanceState) {
@@ -44,11 +52,58 @@ public class MenuFragment extends Fragment {
                 getFragmentManager().beginTransaction().replace(R.id.frame_container, new BounceXFragment()).addToBackStack("").commit();
             }
         });
+        bounceY.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.frame_container, new BounceYFragment()).addToBackStack("").commit();
+            }
+        });
+        moveX.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.frame_container, new MoveXFragment()).addToBackStack("").commit();
+            }
+        });
+        moveY.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.frame_container, new MoveYFragment()).addToBackStack("").commit();
+            }
+        });
+        rotate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.frame_container, new RotateFragment()).addToBackStack("").commit();
+            }
+        });
+        rotateX.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.frame_container, new RotateXFragment()).addToBackStack("").commit();
+            }
+        });
+        rotateY.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.frame_container, new RotateYFragment()).addToBackStack("").commit();
+            }
+        });
+
     }
 
     private void cast(View v) {
-        fadeIn = (Button)v.findViewById(R.id.fade_in);
-        fadeOut= (Button)v.findViewById(R.id.fade_out);
-        bounceX= (Button)v.findViewById(R.id.bounce_x);
+        fadeIn = (Button) v.findViewById(R.id.fade_in);
+        fadeOut = (Button) v.findViewById(R.id.fade_out);
+        bounceX = (Button) v.findViewById(R.id.bounce_x);
+        bounceY = (Button) v.findViewById(R.id.bounce_y);
+        rotate = (Button) v.findViewById(R.id.rotate);
+        rotateX = (Button) v.findViewById(R.id.rotate_x);
+        rotateY = (Button) v.findViewById(R.id.rotate_y);
+        moveX = (Button) v.findViewById(R.id.move_x);
+        moveY = (Button) v.findViewById(R.id.move_y);
+        zoomIN = (Button) v.findViewById(R.id.zoom_in);
+        zoomOut = (Button) v.findViewById(R.id.zoom_out);
+        zoomIN.setVisibility(View.GONE);
+        zoomOut.setVisibility(View.GONE);
     }
 }
