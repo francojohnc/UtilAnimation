@@ -19,5 +19,7 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login_form">SAMPLE LOGIN FORM</string>
-    <string name="image">IMAGE VIEW</string>
+    <string name="image">IMAGE ANIMATION</string>
+    <string name="button_animation">BUTTON ANIMATION</string>
+    <string name="animation_listener">ANIMATION LISTENER</string>
 </resources>

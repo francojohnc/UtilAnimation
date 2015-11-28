@@ -26,8 +26,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/image" />
+            <Button
+                android:layout_margin="5dp"
+                android:onClick="button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_animation" />
 
-
+            <Button
+                android:layout_margin="5dp"
+                android:onClick="listener"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/animation_listener" />
 
         </LinearLayout>
     </ScrollView>
