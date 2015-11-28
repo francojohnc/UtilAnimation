@@ -19,4 +19,5 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login_form">SAMPLE LOGIN FORM</string>
+    <string name="image">IMAGE VIEW</string>
 </resources>

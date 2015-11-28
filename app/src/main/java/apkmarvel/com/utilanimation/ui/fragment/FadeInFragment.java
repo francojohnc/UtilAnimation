@@ -16,7 +16,7 @@ public class FadeInFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstanceState) {
         View v= inflater.inflate(R.layout.fragment, container, false);
-        UtilAnim.fideIn(v,1000,null);//set animation alpha 1000= 1second
+        UtilAnim.fideIn(v,1000,null);
         return v;
     }
 }

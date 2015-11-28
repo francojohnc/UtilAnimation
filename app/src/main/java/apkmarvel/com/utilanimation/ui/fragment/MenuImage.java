@@ -12,9 +12,9 @@ import apkmarvel.com.utilanimation.R;
 import apkmarvel.com.utilanimation.util.UtilAnim;
 
 /**
- * Created by c_jvfranco on 11/27/2015.
+ * Created by RAMMERSD on 11/28/2015.
  */
-public class MenuFragment extends Fragment {
+public class MenuImage extends Fragment {
     private Button fadeIn;
     private Button fadeOut;
     private Button bounceX;
@@ -40,69 +40,72 @@ public class MenuFragment extends Fragment {
         fadeIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.frame_container, new FadeInFragment()).addToBackStack("").commit();
+                UtilAnim.fideIn(imgProgdev, 1000, null);
             }
         });
         fadeOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.frame_container, new FadeOutFragment()).addToBackStack("").commit();
+                UtilAnim.fideOut(imgProgdev, 1000, null);
             }
         });
         bounceX.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.frame_container, new BounceXFragment()).addToBackStack("").commit();
+                UtilAnim.moveXBounce(imgProgdev, UtilAnim.dip2px(getActivity(), 90), 0, 500, null);
             }
         });
         bounceY.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.frame_container, new BounceYFragment()).addToBackStack("").commit();
+                UtilAnim.moveYBounce(imgProgdev, UtilAnim.dip2px(getActivity(), 200), 0, 500, null);
             }
         });
         moveX.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.frame_container, new MoveXFragment()).addToBackStack("").commit();
+                UtilAnim.moveX(imgProgdev, UtilAnim.dip2px(getActivity(), 500), 0, 500, null);
             }
         });
         moveY.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.frame_container, new MoveYFragment()).addToBackStack("").commit();
+                UtilAnim.moveY(imgProgdev, UtilAnim.dip2px(getActivity(), 500), 0, 500, null);
             }
         });
         rotate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.frame_container, new RotateFragment()).addToBackStack("").commit();
+                UtilAnim.rotate(imgProgdev, 360, 1000, null);
             }
         });
         rotateX.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.frame_container, new RotateXFragment()).addToBackStack("").commit();
+                UtilAnim.rotateX(imgProgdev, 360, 1000, null);
             }
         });
         rotateY.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.frame_container, new RotateYFragment()).addToBackStack("").commit();
+                UtilAnim.rotateY(imgProgdev, 360, 1000, null);
             }
         });
         zoomIN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.frame_container, new ZoomInFragment()).addToBackStack("").commit();
+                UtilAnim.scaleWidth(imgProgdev,0,1.0f,1000,null);
+                UtilAnim.scaleHeight(imgProgdev, 0,1.0f, 1000, null);
             }
         });
         zoomOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.frame_container, new ZoomOutFragment()).addToBackStack("").commit();
+                UtilAnim.scaleWidth(imgProgdev,5.0f,1.0f,1000,null);
+                UtilAnim.scaleHeight(imgProgdev,5.0f,1.0f, 1000, null);
             }
         });
+
     }
 
     private void cast(View v) {
@@ -118,6 +121,5 @@ public class MenuFragment extends Fragment {
         zoomIN = (Button) v.findViewById(R.id.zoom_in);
         zoomOut = (Button) v.findViewById(R.id.zoom_out);
         imgProgdev = (ImageView)v.findViewById(R.id.progdev);
-        imgProgdev.setVisibility(View.GONE);
     }
 }

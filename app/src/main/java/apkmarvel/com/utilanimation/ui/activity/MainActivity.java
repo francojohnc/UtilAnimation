@@ -17,4 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,ContainerActivity.class);
         startActivity(i);
     }
+    public void image(View v){
+        Intent i = new Intent(this,ImageAnimation.class);
+        startActivity(i);
+    }
+
 }

@@ -20,6 +20,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fragment_animation" />
+            <Button
+                android:layout_margin="5dp"
+                android:onClick="image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/image" />
+
+
 
         </LinearLayout>
     </ScrollView>

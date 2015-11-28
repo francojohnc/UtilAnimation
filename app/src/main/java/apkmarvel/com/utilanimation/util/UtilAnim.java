@@ -15,7 +15,7 @@ public class UtilAnim {
 	/**
 	 * @param v - your view
 	 * @param durationMillis - milliseconds
-	 * @param listener - listener if animation done
+	 * @param listener - listener if an
 	 */
 	public static ObjectAnimator fideIn(View v,long durationMillis,Animator.AnimatorListener listener) {
 		return ofFloat(v, "alpha",0.0F, 1.0F, durationMillis,listener);
@@ -32,8 +32,14 @@ public class UtilAnim {
 	public static ObjectAnimator rotate(View v,float toDegrees,long durationMillis,Animator.AnimatorListener listener) {
 		return ofFloat(v, "rotation", 0.0f, toDegrees, durationMillis,listener);
 	}
+	/**
+	 * @param fromWidth - 1.0f is the original size of the view
+	 */
 	public static ObjectAnimator scaleWidth(View v,float fromWidth,float toWidth,long durationMillis,Animator.AnimatorListener listener) {
-		return ofFloat(v, "width", fromWidth, toWidth, durationMillis,listener);
+		return ofFloat(v, "scaleX", fromWidth, toWidth, durationMillis,listener);
+	}
+	public static ObjectAnimator scaleHeight(View v,float fromWidth,float toWidth,long durationMillis,Animator.AnimatorListener listener) {
+		return ofFloat(v, "scaleY", fromWidth, toWidth, durationMillis,listener);
 	}
 	public static ObjectAnimator moveY(View v,float fromY,float toY,long durationMillis,Animator.AnimatorListener listener) {
 		return ofFloat(v, "translationY", fromY, toY, durationMillis,listener);
