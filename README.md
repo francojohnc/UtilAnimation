@@ -6,18 +6,20 @@ less code,
 reusable
 [demo](https://youtu.be/q-sNtln96rI)
 
-how to use?
+#####how to use?
 
 just download this [class](https://raw.githubusercontent.com/francojohnc/UtilAnimation/master/app/src/main/java/apkmarvel/com/utilanimation/util/UtilAnim.java) and copy to your application
 
-syntax
+#####syntax
+```
   UtilAnim.rotate(v, 360, 1000, null);
-  
+```
    v - is your object you want to animate
    360 - degrees
    null - is the animation listener
 
 Fragment Animation
+```
  public class RotateFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -26,11 +28,13 @@ Fragment Animation
         return v;
     }
 }
- 
+``` 
 Image Animation
+```
   UtilAnim.rotate(imgProgdev, 360, 1000, null);
-  
+``` 
 On Animation listener
+```
   UtilAnim.rotateY(v, 360, 3000, new Animator.AnimatorListener() {
             @Override
             public void onAnimationStart(Animator animator) {
@@ -49,4 +53,4 @@ On Animation listener
 
             }
         });
- 
+ ```
