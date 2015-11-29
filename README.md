@@ -7,6 +7,8 @@ this is java class only
 
 [demo](https://youtu.be/q-sNtln96rI)
 
+![alt tag](http://i.giflike.com/l8s1sVg.gif)
+
 * fade in
 * fade out
 * bounce x
